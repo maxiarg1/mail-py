@@ -17,16 +17,16 @@ def mailSender():
     message = "jads"
      
     # setup the parameters of the message
-    password = "flak29fortiger44"
-    msg['From'] = "ma@cesetti.com.ar"
-    msg['To'] = "ma@cesetti.com.ar"
+    password = "pass"
+    msg['From'] = "MAIL"
+    msg['To'] = "MAIL"
     msg['Subject'] = "Subscription"
      
     # add in the message body
     msg.attach(MIMEText(message, 'plain'))
      
     #create server
-    server = smtplib.SMTP('mail.cesetti.com.ar: 587')
+    server = smtplib.SMTP('server: 587')
      
     server.starttls()
      
